@@ -34,3 +34,7 @@ The release asset should stay named `Nova-win64.zip` so website links can use:
 ```text
 https://github.com/lJazzpahlol/nova-download/releases/latest/download/Nova-win64.zip
 ```
+
+## Updates
+
+Nova checks for new versions on launch. When one is available, a Windows notification appears and you can update in place from the NOVA tray icon (right-click, then Update) - no manual re-download needed. Your settings and learned words are kept.
