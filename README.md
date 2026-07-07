@@ -37,4 +37,12 @@ https://github.com/lJazzpahlol/nova-download/releases/latest/download/Nova-win64
 
 ## Updates
 
-Nova checks for new versions on launch. When one is available, a Windows notification appears and you can update in place from the NOVA tray icon (right-click, then Update) - no manual re-download needed. Your settings and learned words are kept.
+Nova checks for new versions on launch. When one is available, a Windows notification appears and you can update in place from the NOVA tray icon (right-click, then Update) - no manual re-download needed. Your settings and learned words are kept. Normal app fixes ship as a small `Nova-patch-win64.zip`; installed copies prefer that automatically and fall back to the full `Nova-win64.zip` if the patch is missing or fails.
+
+The app-only patch is built with:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\build_patch.ps1 -CopyToDownloadRepo
+```
+
+Publish both `Nova-win64.zip` and `Nova-patch-win64.zip` on the same release.
